@@ -1,0 +1,41 @@
+#:kivy 1.0.9
+
+<BGButton>:
+    on_press: root.do_action('hi')
+
+<BeerGauge>:
+#    canvas:
+#        Rectangle:
+#            pos: self.center_x - 5, 0
+#            size: 10, self.height
+#
+#    Label:
+#        font_size: 70
+#        center_x: root.width / 4
+#        top: root.top - 50
+#        text: "0"
+#
+#    Label:
+#        font_size: 70
+#        center_x: root.width * 3 / 4
+#        top: root.top - 50
+#        text: "0"
+
+    ToolBar:
+        orientation: 'tb-lr'
+
+        BGButton:
+            text: 'Beer'
+
+        BGButton:
+            text: 'Wine'
+
+        BGButton:
+            text: 'Whisky'
+
+        BGButton:
+            text: 'Other'
+
+    ProgressBar:
+        center_y: root.height * .7
+        width: root.width
