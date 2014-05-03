@@ -9,6 +9,19 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 
 
+# TODO: Input male/female & body weight (categories?)
+# TODO: Human figure progress bar with safety levels (&blood alcohol level):
+#	* Driving safety
+#	* Hangover free
+# TODO: optional input bed-time, upon which
+#	* a red-line indicating last point at which hangover is avoided at requested bedtime
+# 
+# Future todos: 
+#	* maybe a soberness test (stability and/or accuracy) calibrating the alcohol level estimation
+#	* maybe learn according to past experience (hangover false/positives etc.)
+#	* input results from self-tests for blood alcohol, upon which a model would be re-calibrated.
+
+
 class BeerGauge(Widget):
     pass
 
